@@ -1,0 +1,74 @@
+#专专题分析-支付宝分析-企业支付宝分析-试机分析'
+check_Alipay_EnterpriseTest1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"试机分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//input[@placeholder= "请填写关键词"]'
+    action: send
+    value: '关小鸿'
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[contains(text(),"查 询")]'
+    action: click
+check_Alipay_EnterpriseTest2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"2088932888881592")]'
+    action: text
+
+#专专题分析-支付宝分析-企业支付宝分析-典型卡分析
+check_Alipay_Enterprise_Typical1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"典型卡分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//label[@title="日最小交易次数"]/../..//input[@placeholder= "请填写"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//label[@title="日最小交易次数"]/../..//input[@placeholder= "请填写"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="app-main"]//label[@title="日最小交易次数"]/../..//input[@placeholder= "请填写"]'
+    action: send
+    value: '15'
+check_Alipay_Enterprise_Typical2:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[contains(text(),"查 询")]'
+    action: click
+check_Alipay_Enterprise_Typical3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"吴小钦")]'
+    action: text
+
+#专专题分析-支付宝分析-企业支付宝分析-交易分析
+check_Alipay_Enterprise_Transaction1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//input[@placeholder= "请填写关键词"]'
+    action: send
+    value: '赵小成'
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[contains(text(),"查 询")]'
+    action: click
+check_Alipay_Enterprise_Transaction2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"赵小成")]'
+    action: text
+
+#专专题分析-支付宝分析-企业支付宝分析-大金额转账
+check_Alipay_Enterprise_Transf1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"大金额转账")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//input[@placeholder= "请填写关键词"]'
+    action: send
+    value: '2088042888882823'
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[contains(text(),"查 询")]'
+    action: click
+check_Alipay_Enterprise_Transf2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"2088042888882823")]'
+    action: text

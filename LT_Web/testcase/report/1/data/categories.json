@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "children" : [ {
+        "name" : "test_toolbox_wide_table",
+        "uid" : "fd62844b52d4e4a",
+        "parentUid" : "75faf91e540a74d349bf51d4565a1ced",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696920933242,
+          "stop" : 1696920944401,
+          "duration" : 11159
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "75faf91e540a74d349bf51d4565a1ced"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

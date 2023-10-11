@@ -1,0 +1,23 @@
+#首页-登录
+login:
+  - by: xpath
+    locator: "//input[contains(@placeholder,'用户名')]"
+    action: send
+    value: 'liudeyi'
+
+  - by: xpath
+    locator: "//input[contains(@placeholder,'密码')]"
+    action: send
+    value: 'ldy12138'
+
+  - by: xpath
+    locator: "//span[contains(text(),'登 录')]"
+    action: click
+
+
+#案件列表-点击【新建案件】
+click_addcase:
+  - by: xpath
+    locator: "//*[@id='app']/div/div[2]/div[1]/div/div[1]/div[2]/button//span[contains(text(),'新建案件')]"
+    action: click
+

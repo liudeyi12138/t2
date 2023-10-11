@@ -1,0 +1,83 @@
+{
+  "uid" : "ac631a0453ec4bcc",
+  "name" : "test_Alipay_association",
+  "fullName" : "test_01login.TestStart#test_Alipay_association",
+  "historyId" : "2a1c808b68d51d17d4e93ba2ea110cc1",
+  "time" : {
+    "start" : 1696920974760,
+    "stop" : 1696920974760,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 282, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "专题分析-支付宝分析-数据关联"
+  }, {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "25992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "24169172998650f7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920929734,
+        "stop" : 1696920929734,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b9a25d77efd4195b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920821169,
+        "stop" : 1696920821169,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "ac631a0453ec4bcc.json",
+  "parameterValues" : [ ]
+}

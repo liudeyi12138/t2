@@ -1,0 +1,267 @@
+#资金专题分析-原始数据查询-分类原始数据-支付宝
+check_classification_rawdata_alipay1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "分类原始数据"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "支付宝"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "请选择数据表名"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "支付宝注册信息"]'
+    action: click
+check_classification_rawdata_alipay2:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "关小鸿"]'
+    action: text
+check_classification_rawdata_alipay3:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "支付宝注册信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "支付宝交易信息"]'
+    action: click
+check_classification_rawdata_alipay4:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "18358887303"]'
+    action: text
+check_classification_rawdata_alipay5:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "支付宝交易信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "支付宝购物信息"]'
+    action: click
+check_classification_rawdata_alipay6:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "46270548998888883901364"]'
+    action: text
+check_classification_rawdata_alipay7:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "支付宝购物信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "支付宝登陆日志"]'
+    action: click
+check_classification_rawdata_alipay8:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "2409:8962:580e:04e8:2891:cb15:29e4:639d"]'
+    action: text
+
+#资金专题分析-原始数据查询-分类原始数据-银行卡
+check_classification_rawdata_bankcard1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "分类原始数据"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "银行卡"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "请选择数据表名"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡账单"]'
+    action: click
+check_classification_rawdata_bankcard2:
+  - by: xpath
+    locator: '//*[@class="ant-table-wrapper"]//li[text() = "共 39 条"]'
+    action: text
+check_classification_rawdata_bankcard3:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "银行卡账单"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡信息"]'
+    action: click
+check_classification_rawdata_bankcard4:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "352888198888888888"]'
+    action: text
+check_classification_rawdata_bankcard5:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "银行卡信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡人员信息"]'
+    action: click
+check_classification_rawdata_bankcard6:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "510888198888838888"]'
+    action: text
+check_classification_rawdata_bankcard7:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "银行卡人员信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡住址信息"]'
+    action: click
+check_classification_rawdata_bankcard8:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "中国四****市绵阳市xxxx8栋8单元888"]'
+    action: text
+check_classification_rawdata_bankcard9:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "银行卡住址信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡强制措施"]'
+    action: click
+check_classification_rawdata_bankcard10:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "重庆市南川区公安xxxxxxxxx"]'
+    action: text
+check_classification_rawdata_bankcard11:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "银行卡强制措施"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "银行卡联系方式信息"]'
+    action: click
+check_classification_rawdata_bankcard12:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "183888888750"]'
+    action: text
+
+#资金专题分析-原始数据查询-分类原始数据-财付通
+check_classification_rawdata_tenpay1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "分类原始数据"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "财付通"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "请选择数据表名"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "财付通基本信息"]'
+    action: click
+check_classification_rawdata_tenpay2:
+  - by: xpath
+    locator: '//*[@class="ant-table-wrapper"]//td[text() = "刘小小"]'
+    action: text
+check_classification_rawdata_tenpay3:
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "财付通基本信息"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "财付通交易记录"]'
+    action: click
+check_classification_rawdata_tenpay4:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[text() = "1000039501180121022888888888883139511737"]'
+    action: text
+
+#资金专题分析-原始数据查询-分类原始数据-取证报告
+check_classification_rawdata_report1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "分类原始数据"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "取证报告"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//span[text() = "请选择数据表名"]/..'
+    action: click
+  - by: xpath
+    locator:   '//*[@class="rc-virtual-list"]//div[@title= "转账支付记录"]'
+    action: click
+check_classification_rawdata_report2:
+  - by: xpath
+    locator: '//*[@class="ant-table-wrapper"]//li[text() = "共 25 条"]'
+    action: text
+
+#资金专题分析-原始数据查询-汇总流水-支付宝
+check_classification_summaryflow_alipay1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "汇总流水"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "支付宝"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="支付宝账号"]/../../../..//input[@placeholder="请输入账号"]'
+    action: send
+    value: '2088632888881364'
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="支付宝账号"]/../../../..//span[text()="查 询"]'
+    action: click
+check_classification_summaryflow_alipay2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[text()="139"]'
+    action: text
+
+#资金专题分析-原始数据查询-汇总流水-银行卡
+check_classification_summaryflow_bankcard1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "汇总流水"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "银行卡"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="银行卡账号"]/../../../..//span[text()="重 置"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="银行卡账号"]/../../../..//input[@placeholder="请输入账号"]'
+    action: send
+    value: '6217888888886140'
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="银行卡账号"]/../../../..//span[text()="查 询"]'
+    action: click
+check_classification_summaryflow_bankcard2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[text()="18"]'
+    action: text
+
+#资金专题分析-原始数据查询-汇总流水-财付通
+check_classification_summaryflow_tenpay1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "汇总流水"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "财付通"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="财付通账号"]/../../../..//span[text()="重 置"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="财付通账号"]/../../../..//input[@placeholder="请输入账号"]'
+    action: send
+    value: 'l15828884891'
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="财付通账号"]/../../../..//span[text()="查 询"]'
+    action: click
+check_classification_summaryflow_tenpay2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[text()="9"]'
+    action: text
+
+#资金专题分析-原始数据查询-汇总流水-取证报告
+check_classification_summaryflow_report1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "汇总流水"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "取证报告"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="取证报告账号"]/../../../..//span[text()="重 置"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="取证报告账号"]/../../../..//input[@placeholder="请输入账号"]'
+    action: send
+    value: 'tangwei1972113'
+  - by: xpath
+    locator: '//*[@class="main-container"]//label[@title="取证报告账号"]/../../../..//span[text()="查 询"]'
+    action: click
+check_classification_summaryflow_report2:
+  - by: xpath
+    locator: '//*[@class="ant-table-wrapper"]//li[text()="共 4 条"]'
+    action: text
+
+
+
+

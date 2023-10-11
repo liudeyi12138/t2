@@ -1,0 +1,11 @@
+#点击目录列表-需求详情
+click_catalogue_list:
+  - by: xpath
+    locator: "//*[@class='ant-table-tbody']/tr[1]//span[@role='img' and @tabindex='-1']//*[name()='svg']"
+    action: click
+
+#点击上传数据
+click_upload_data:
+  - by: xpath
+    locator: '//*[@class="cell"][contains(text(),"自动化测试批次01")]/../../td[9]//button[1]'
+    action: click

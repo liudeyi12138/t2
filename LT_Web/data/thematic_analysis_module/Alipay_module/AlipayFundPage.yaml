@@ -1,0 +1,15 @@
+#专题分析-支付宝分析-资金规律分析'
+check_Alipay_Fund1:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/form/div[2]/div[2]/div/div/div/div/span[2]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[13]/div/div/div/div[2]/div[1]/div/div/div[3]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Phone2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"157")]'
+    action: text

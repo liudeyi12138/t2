@@ -1,0 +1,59 @@
+#首次进入弹窗点击-调证数据导入
+check_diaozheng:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"搜索")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//tr[@data-row-key="0"]//td[10]'
+    action: text
+
+#断言取证数据是否导入成功
+check_quzheng:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"取证日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"搜索")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//tr[@data-row-key="0"]//td[9]'
+    action: text
+
+#断言调证批次数据是否抽取成功
+check_update_diaozheng:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"主题库提取日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-table-scroll"]//td[contains(text(),"调证")]/../td[8]/span'
+    action: text
+
+#断言调调证次数据是否抽取成功
+check_update_quzheng:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"主题库提取日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-table-scroll"]//td[contains(text(),"取证")]/../td[8]/span'
+    action: text
+
+#断言图库数据是否抽取成功
+check_update_tuku:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"图谱提取日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[3]/span'
+    action: text
+
+
+
+
+
+

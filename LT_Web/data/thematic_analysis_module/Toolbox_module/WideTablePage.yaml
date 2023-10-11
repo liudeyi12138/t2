@@ -1,0 +1,90 @@
+#制作宽表
+check_WideTable1:
+  - by: xpath
+    locator: "//*[@class='tree']//div[@title='调证']/../../../..//span[contains(text(),'调证数据')]"
+    action: click
+check_WideTable2:
+  - by: xpath
+    locator: "//*[@class='details']//span[contains(text(),'支付宝登陆日志')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='details']//span[contains(text(),'支付宝购物信息')]"
+    action: click
+  - by: xpath
+#    locator: "//*[@class='steps-content']//span[contains(text(),'请选择主表')]/../../..//span[@role='img']//*[name()='svg']"
+    locator: "//*[@class='steps-content']//div[contains(text(),'请选择主表')]/..//input"
+    action: click
+  - by: xpath
+    locator: "/html/body/div[13]/div/div/div/div[2]/div[1]/div/div/div[1]/div"
+    action: click
+  - by: xpath
+    locator: "//*[@class='step-container']//span[contains(text(),'下一步')]"
+    action: click
+check_WideTable3:
+  - by: xpath
+    locator: "//*[@class='steps-content']//div[contains(text(),'支付宝登陆日志')]/..//input"
+    action: click
+  - by: xpath
+    locator: "//*[@class='steps-content']//div[contains(text(),'支付宝登陆日志')]/..//input"
+    action: enter_click
+#  - by: xpath
+#    locator: "/html/body/div[14]/div/div/div/div[2]/div[1]/div/div/div[1]/div"
+#    action: click
+  - by: xpath
+    locator: "//*[@class='steps-content']//div[contains(text(),'支付宝购物信息')]/..//input"
+    action: click
+  - by: xpath
+    locator: "//*[@class='steps-content']//div[contains(text(),'支付宝购物信息')]/..//input"
+    action: enter_click
+#  - by: xpath
+#    locator: "/html/body/div[15]/div/div/div/div[2]/div[1]/div/div/div[1]/div"
+#    action: click
+  - by: xpath
+    locator: "//*[@class='step-container']//span[contains(text(),'下一步')]"
+    action: click
+check_WideTable4:
+  - by: xpath
+    locator: "//*[@class='field-list']//span[contains(text(),'买家昵称')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='step-container']//span[contains(text(),'下一步')]"
+    action: click
+check_WideTable5:
+  - by: xpath
+    locator: "//*[@class='step-container']//span[contains(text(),'完 成')]"
+    action: click
+check_WideTable6:
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择上级分组名称')]/../../span[2]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-select-tree']//span[@title='数据表']"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请输入过程库名')]/..//input"
+    action: send
+    value: '过程库2'
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//input[@placeholder='请输入数据表名称']"
+    action: send
+    value: '宽表1'
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择数据模型类型')]/../..//input"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择数据模型类型')]/../..//input"
+    action: enter_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div[2]/div/div/div[2]/div/div[2]/div[3]/div/button[2]'
+    action: click
+check_WideTable7:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "//*[@class='tabularAnalysis']//span[contains(text(),'宽表1 (当前分组：过程库2)')]"
+    action: text
+
+
+
+

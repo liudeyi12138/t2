@@ -1,0 +1,35 @@
+#批量新增:
+import_data:
+  - by: window
+    locator: -1
+    action: change
+    #点击导入数据
+  - by: xpath
+    locator: "//*[@type='button']//span[contains(text(),'批量新增')]"
+    action: click
+    #上传文件
+  - by: xpath
+    locator: '//*[@class="ant-upload ant-upload-drag"]//input'
+    action: send
+    value: 'C:/Users/admin/PycharmProjects/LeiTingWeb/LT_Web/data/1测试痕迹调取目录.xlsx'
+
+#断言是否调取目录导入成功
+assert_check4:
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "调证管理"]/../..'
+    action: click
+  - by: xpath
+    locator: "//*[@class='list']//div[contains(text(),'调证')]"
+    action: click
+  - by: xpath
+    locator: '//*[@class="table-wrap"]//input[@placeholder="请输入调取账户，调取账户名"]'
+    action: send
+    value: '13063096677'
+  - by: xpath
+    locator: '//*[@class="table-wrap"]//span[contains(text(),"搜索")]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div[3]/div/div/div/div/div/div[2]/table/tbody/tr/td[2]'
+    action: text
+
+

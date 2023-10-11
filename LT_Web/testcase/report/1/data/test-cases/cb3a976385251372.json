@@ -1,0 +1,83 @@
+{
+  "uid" : "cb3a976385251372",
+  "name" : "test_WeChat_consumption",
+  "fullName" : "test_01login.TestStart#test_WeChat_consumption",
+  "historyId" : "7089b0e599292218be9b67f65a217c5a",
+  "time" : {
+    "start" : 1696920974758,
+    "stop" : 1696920974758,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 274, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "专题分析-微信分析-消费分析"
+  }, {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "25992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4306b998519e55af",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920929732,
+        "stop" : 1696920929732,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2e257f855f7719f8",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920821167,
+        "stop" : 1696920821167,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "cb3a976385251372.json",
+  "parameterValues" : [ ]
+}

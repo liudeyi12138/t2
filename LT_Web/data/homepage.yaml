@@ -1,0 +1,726 @@
+#首次进入弹窗点击-调证数据导入
+click_data_import1:
+#获取全部页面句柄，切换到当前最新打开的窗口
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "/html/body/div[13]/div/div[2]/div/div[2]/div[3]/button[2]/span"
+#    locator: '//*[@class="ant-modal-content"]//span[contains(text(),"调证数据导入")]'
+    action: click
+
+#首次进入弹窗点击-取证数据导入
+click_data_import2:
+  - by: xpath
+    locator: "/html/body/div[10]/div/div[2]/div/div[2]/div[3]/button[3]/span"
+#    locator: '//*[@class="ant-modal-content"]//span[contains(text(),"取证数据导入")]'
+    action: click
+
+#点击取证报告导入
+click_upload_quzheng:
+  - by: window
+    locator: -1
+    action: change
+#  #鼠标悬停
+#  - by: xpath
+#    locator: '//*[@class="ant-dropdown-link ant-dropdown-trigger"]//span[contains(text(),"数据导入")]'
+#    action: hover
+#  #点击取证报告导入
+#  - by: xpath
+#    locator: '//*[@class="ant-dropdown ant-dropdown-placement-bottomLeft"]//span[contains(text(),"取证报告导入")]'
+#    action: click
+  - by: xpath
+    locator: '//*[@class="ant-col ant-col-6"]//div[contains(text(),"取证数据导入")]'
+    action: click
+
+#点击刷新主题库
+click_update_data:
+  - by: window
+    locator: -1
+    action: change
+#  - by: xpath
+#    locator: '//*[@class="case-home-header"]//span[contains(text(),"刷新主题库")]'
+#    action: click
+  - by: xpath
+    locator: '//*[@class="ant-col ant-col-6"]//div[contains(text(),"刷新主题库")]'
+    action: click
+
+#刷新调证批次数据
+click_update_diaozheng_data:
+  - by: xpath
+    locator: '//*[@class="refresh-select"]//span[contains(text(),"选择需要刷新的批次")]/../div[2]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="rc-virtual-list-holder-inner"]//div[@title="调证"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-btn ant-btn-primary"]//span[contains(text(),"确认刷新")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//span[@class="ant-modal-close-x"]'
+    action: click
+
+#刷新取证批次数据
+click_update_quzheng_data:
+  - by: xpath
+    locator: '//*[@class="refresh-select"]//span[contains(text(),"选择需要刷新的批次")]/../div[2]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="rc-virtual-list-holder-inner"]//div[@title="取证"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-btn ant-btn-primary"]//span[contains(text(),"确认刷新")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//span[@class="ant-modal-close-x"]'
+    action: click
+
+#点击刷新图库
+click_update_picture_data1:
+  - by: window
+    locator: -1
+    action: change
+#  - by: xpath
+#    locator: '//*[@class="case-home-header"]//span[contains(text(),"刷新图库")]'
+#    action: click
+  - by: xpath
+    locator: '//*[@class="ant-col ant-col-6"]//div[contains(text(),"刷新图库")]'
+    action: click
+#点击刷新图库-确定
+click_update_picture_data2:
+  - by: xpath
+    locator: '//*[@class="ant-modal-confirm-body-wrapper"]//span[contains(text(),"刷 新")]'
+    action: click
+
+#点击导入日志列表
+click_logpage:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-layout-sider-children"]//span[contains(text(),"导入日志列表")]/../..'
+    action: click
+
+#点击超级画像
+click_super_portrait:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-layout-sider-children"]//span[contains(text(),"超级画像")]/../..'
+    action: click
+
+#点击专题分析-手机取证分析-数据画像
+click_thematic_phone_image:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "数据画像"]/../..'
+    action: click
+
+#点击专题分析-手机取证分析-通联分析
+click_thematic_phone_communications:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析"]/../..'
+    action: click
+
+#点击专题分析-手机取证分析-交易分析
+click_thematic_phone_transaction:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "交易分析"]/../..'
+    action: click
+
+#点击专题分析-手机取证分析-时序分析
+click_thematic_phone_sequential:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "时序分析"]/../..'
+    action: click
+
+#点击专题分析-手机取证分析-附近分析
+click_thematic_annex:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "附件分析"]/../..'
+    action: click
+
+
+#点击专题分析-手机取证分析-全文检索
+click_thematic_fulltext_searching:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "手机取证分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "全文检索"]/../..'
+    action: click
+
+#点击专题分析-资金专题分析-原始数据查询
+click_fund_fulltext_raw_data:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../../../..//span[text()="原始数据查询"]/../..'
+    action: click
+
+#点击专题分析-资金专题分析-可疑行为分析
+click_fund_suspicious_behavior:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../../../..//span[text()="可疑行为分析"]/../..'
+    action: click
+
+#点击专题分析-资金专题分析-资金溯源分析
+click_fund_traceability:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../../../..//span[text()="资金溯源分析"]/../..'
+    action: click
+
+#点击专题分析-资金专题分析-资金净流向分析
+click_fund_net_flow_direction:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "资金专题分析"]/../../../..//span[text()="资金净流向分析"]/../..'
+    action: click
+
+#点击专题分析-通联分析-原始数据查询
+click_communications_raw_data_query:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../../../..//span[text()="原始数据查询"]/../..'
+    action: click
+
+#点击专题分析-通联分析-通话关系分析
+click_communications_call_relationship:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../../../..//span[text()="通话关系分析"]/../..'
+    action: click
+
+#点击专题分析-通联分析-聊天分析
+click_communications_call_chat:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "通联分析" and @class="child-title menu-item"]/../../../..//span[text()="聊天分析"]/../..'
+    action: click
+
+#点击专题分析-物流分析-物流原始数据
+click_logistics_original_data:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "物流分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "物流分析" and @class="child-title menu-item"]/../../../..//span[text()="物流原始数据"]/../..'
+    action: click
+
+#点击专题分析-物流分析-可疑行为分析
+click_logistics_suspicious_behavior:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "物流分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "物流分析" and @class="child-title menu-item"]/../../../..//span[text()="可疑行为分析"]/../..'
+    action: click
+
+#点击专题分析-微信分析-原始数据查询
+click_WeChat_suspicious_behavior:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../../../..//span[text()="原始数据查询"]/../..'
+    action: click
+
+#点击专题分析-微信分析-关联分析
+click_WeChat_association:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../../../..//span[text()="关联分析"]/../..'
+    action: click
+
+#点击专题分析-微信分析-消费分析
+click_WeChat_consumption:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "微信分析" and @class="child-title menu-item"]/../../../..//span[text()="消费分析"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-数据关联
+click_Alipay_association:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="数据关联"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-IP分析
+click_Alipay_IP:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="IP分析"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-关联手机分析
+click_Alipay_Phone:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="关联手机分析"]/../..'
+    action: click
+
+
+#点击专题分析-支付宝分析-资金规律分析
+click_Alipay_fund:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="资金规律分析"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-消费标题分析
+click_Alipay_Title:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="消费标题分析"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-透视分析
+click_Alipay_perspective:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="透视分析"]/../..'
+    action: click
+
+#点击专题分析-支付宝分析-企业支付宝分析
+click_Alipay_Enterprise:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "专题分析"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../..'
+    action: click
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "支付宝分析" and @class="child-title menu-item"]/../../../..//span[text()="企业支付宝分析"]/../..'
+    action: click
+
+###################################################################################################################################################################################
+
+#点击调证管理
+click_data:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator:  '//*[@class="ant-layout-sider-children"]//span[text() = "调证管理"]/../..'
+    action: click
+
+#点击批次
+click_batch:
+  - by: xpath
+    locator: "//*[@class='list']//div[contains(text(),'调证')]"
+    action: click
+
+#点击白名单管理
+click_white_list:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-layout-sider-children"]//span[text() = "案件白名单"]/../..'
+    action: click
+
+#点击集合管理
+click_assemble:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'集合管理')]"
+    action: click
+
+#点击支付宝分析
+click_Alipay:
+  - by: xpath
+    locator: "//*[@class='el-submenu__title']//span[contains(text(),'支付宝分析')]"
+    action: click
+
+#点击原始数据验证
+click_raw_data:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'原始数据验证')]"
+    action: click
+
+#点击数据关联
+click_data_association:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'数据关联')]"
+    action: click
+
+#点击IP分析
+click_IP_analysis:
+  - by: xpath
+    locator: "//*[@class='el-submenu__title']//span[contains(text(),'支付宝分析')]/../..//*[@role='menuitem']//span[contains(text(),'IP分析')]"
+    action: click
+
+#点击关联手机分析
+click_relation_phone:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'关联手机分析')]"
+    action: click
+
+#点击企业支付宝分析
+click_enterprise_Alipay:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'企业支付宝分析')]"
+    action: click
+
+#点击资金规律分析
+click_capital_law:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'资金规律分析')]"
+    action: click
+
+#点击消费标题分析
+click_consume_title:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'消费标题分析')]"
+    action: click
+
+#点击透视分析
+click_perspective:
+  - by: xpath
+    locator: "//*[@role='menuitem']//span[contains(text(),'透视分析')]"
+    action: click
+
+#点击分析时光轴
+click_time_axis:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-layout-sider-children"]//span[text() = "分析时光轴"]/../..'
+    action: click
+
+#点击分析时光轴-支付宝
+click_time_axis_Alipay:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='支付宝']"
+    action: click
+
+#点击分析时光轴-银行卡
+click_time_axis_BankCard:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='银行卡']"
+    action: click
+
+
+#点击分析时光轴-话单
+click_time_axis_cdr:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='话单']"
+    action: click
+
+
+#点击分析时光轴-财付通
+click_time_axis_tenpay:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='财付通']"
+    action: click
+
+
+#点击分析时光轴-物流
+click_time_axis_logistics:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='物流']"
+    action: click
+
+
+#点击分析时光轴-微信
+click_time_axis_WeChat:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='微信']"
+    action: click
+
+
+#点击分析时光轴-网技数据
+click_time_axis_Network:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='网技数据']"
+    action: click
+
+
+#点击分析时光轴-取证报告
+click_time_axis_Forensic_report:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='取证报告']"
+    action: click
+
+
+#点击分析时光轴-其它
+click_time_axis_other:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../.."
+    action: click
+
+
+#点击分析时光轴-沉淀库
+click_time_axis_Sedimentation_tank:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='沉淀库']"
+    action: click
+
+
+#点击分析时光轴-Telegram
+click_time_axis_Telegram:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='Telegram']"
+    action: click
+
+
+#点击分析时光轴-网约车
+click_time_axis_car_hailing:
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '分析时光轴']/../../../..//li[@title='网约车']"
+    action: click
+
+#点击工具箱-制作并表
+click_toolbox_consolidate:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../.."
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../../../..//li[@title='制作并表']"
+    action: click
+
+#点击工具箱-制作宽表
+click_toolbox_wide_table:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../.."
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../../../..//li[@title='制作宽表']"
+    action: click
+
+#点击工具箱-Excel清洗
+click_toolbox_Excel:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../.."
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../../../..//li[@title='Excel清洗']"
+    action: click
+
+#点击工具箱-手工绘图
+click_toolbox_drawing:
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../.."
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-layout-sider-children']//span[text() = '工具箱']/../../../..//li[@title='手工绘图']"
+    action: click
+
+
+
+
+
+
+
+
+
+
+
+
+

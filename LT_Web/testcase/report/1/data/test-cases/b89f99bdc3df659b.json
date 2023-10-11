@@ -1,0 +1,63 @@
+{
+  "uid" : "b89f99bdc3df659b",
+  "name" : "test_fund_suspicious",
+  "fullName" : "test_01login.TestStart#test_fund_suspicious",
+  "historyId" : "01f251a8223626c3c943ed1c68cfbb79",
+  "time" : {
+    "start" : 1690513772492,
+    "stop" : 1690513772492,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 196, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "专题分析-资金专题分析-可疑行为分析"
+  }, {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "31792-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "b89f99bdc3df659b.json",
+  "parameterValues" : [ ]
+}

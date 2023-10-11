@@ -1,0 +1,332 @@
+#通联概况-通讯录概览
+check_address_book:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联情况")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"通讯录概览")]'
+    action: click
+
+#通联概况-通话频率
+check_call_frequency1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联情况")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"通话频率")]'
+    action: click
+check_call_frequency2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入对方号码"]'
+    action: send
+    value: '1912XXX3638'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_call_frequency3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"1912XXX3638")]'
+    action: text
+    
+#通联概况-短信频率
+check_sms_frequency1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联情况")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"短信频率")]'
+    action: click
+check_sms_frequency2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[1]/div[2]/div/div/span/input'
+    action: send
+    value: '1569XXX9672'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_sms_frequency3:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr/td[4]/div/span/span'
+    action: text
+
+#通联异常-删除通话
+check_delete_call1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联异常")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"删除通话")]'
+    action: click
+
+#通联异常-通话差异
+check_call_differences1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联异常")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"通话差异")]'
+    action: click
+check_call_differences2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="选择时间"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-calendar-footer-btn"]//a[contains(text(),"此刻")]'
+    action: click
+#  - by: xpath
+#    locator: '//*[@class="ant-calendar-footer-btn"]//a[contains(text(),"确 定")]'
+#    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/div/form/div[2]/div/div/div/div/div[1]/button/span'
+    action: click
+check_call_differences3:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[4]/div/div/div/div/div/div/table/tbody/tr/td[1]'
+    action: text
+
+#通联异常-通联方差
+check_connected_variance1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通联异常")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"通联方差")]'
+    action: click
+check_connected_variance2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入通话次数"]'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_connected_variance3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"326.6")]'
+    action: text
+
+#通讯好友-好友概览
+check_friends_overview1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通讯好友")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"好友概览")]'
+    action: click
+check_friends_overview2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '和X多'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[2]/div[1]/form/div[5]/div/div/div/div/div[1]/button/span'
+    action: click
+check_friends_overview3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"和X多")]'
+    action: text
+
+#通讯好友-文件通讯
+check_friends_file1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通讯好友")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"文件通讯")]'
+    action: click
+check_friends_file2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '腾讯新闻'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[2]/div[1]/form/div[6]/div/div/div/div/div[1]/button/span'
+    action: click
+check_friends_file3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"腾讯新闻")]'
+    action: text
+
+#通讯好友-聊天记录查询
+check_friends_chat_records1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通讯好友")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"聊天记录查询")]'
+    action: click
+check_friends_chat_records2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '狐狸已成精'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_friends_chat_records3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"在不在")]'
+    action: text
+
+#通讯好友-好友聊天查询
+check_friends_chat1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"通讯好友")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"好友聊天查询")]'
+    action: click
+check_friends_chat2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '狐狸已成精'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_friends_chat3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"狐狸已成精")]'
+    action: text
+
+#亲密关系-联系概况
+check_intimacy_contact1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"亲密关系")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"联系概况")]'
+    action: click
+check_intimacy_contact2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小聊天记录次数"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小聊天记录次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小聊天记录次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小聊天记录次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小聊天记录次数"]'
+    action: send
+    value: '30'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[6]/div/div/div/div/div[1]/button/span'
+    action: click
+check_intimacy_contact3:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr/td[4]/div/span/span'
+    action: text
+
+#亲密关系-金钱往来
+check_intimacy_money1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"亲密关系")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"金钱往来")]'
+    action: click
+check_intimacy_money2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/span/input'
+    action: send
+    value: '唐'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_intimacy_money3:
+  - by: xpath
+    locator:  '//*[@class="ant-table-content"]//span[contains(text(),"唐")]'
+    action: text
+
+#群组分析
+check_group_analysis1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"群组分析")]'
+    action: click
+check_group_analysis2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="聊天次数"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="聊天次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="聊天次数"]'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_group_analysis3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"岁月")]'
+    action: text
+
+#异常聊天-删除聊天记录
+check_chat_delete_record1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"异常聊天")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"删除聊天记录")]'
+    action: click
+check_chat_delete_record2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/span/input'
+    action: send
+    value: '狐狸已成精'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_chat_delete_record3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"狐狸已成精")]'
+    action: text
+
+#好友动态
+check_friends_tends1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"好友动态")]'
+    action: click
+check_friends_tends2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '君无戏言'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_friends_tends3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"君无戏言")]'
+    action: text
+
+#搜索记录
+check_search_records1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"搜索记录")]'
+    action: click
+check_search_records2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键字"]'
+    action: send
+    value: '杜'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_search_records3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"2021-11-09 08:50:06")]'
+    action: text
+
+
+
+
+
+
+

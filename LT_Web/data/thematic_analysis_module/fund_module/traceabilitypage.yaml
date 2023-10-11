@@ -1,0 +1,17 @@
+#资金专题分析-资金溯源分析
+check_fund_traceability1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//input[@placeholder = "请输入关键词"]'
+    action: send
+    value: '黄'
+  - by: xpath
+    locator: '//*[@class="search-warp"]//span[text() = "查 询"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//th[@colstart = "0"]/span'
+    action: click
+check_fund_traceability2:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[text() = "黄小扬"]'
+    action: text
+

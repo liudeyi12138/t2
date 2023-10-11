@@ -1,0 +1,9 @@
+#专题分析-微信分析-关联分析
+check_WeChat_Association1:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[contains(text(),"取证报告默认列表")]/../../../../.././span[2]'
+    action: click
+check_WeChat_Association2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"zcpzsw")]'
+    action: text

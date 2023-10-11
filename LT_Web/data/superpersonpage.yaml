@@ -1,0 +1,263 @@
+#人员画像-选择嫌疑人
+choose_suspect:
+  - by: xpath
+    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//div[@title='吴小钦']"
+    action: click
+
+#操作数据加入调取目录
+add_diaoqulist1:
+  - by: xpath
+    locator: "//*[@class='app-main']//a[contains(text(),'2088042888884838')]"
+    #鼠标右键点击
+    action: right_click
+  - by: xpath
+#    locator: "/html/body/div[14]/div/div/div/div[2]/div/div/div/div/div/div/ul/li[2]"
+    locator: '//*[@class="ant-spin-nested-loading"]/div/ul/li[@class="ant-list-item contextmenu-item"][2]'
+    action: click
+#操作数据加入调取目录
+add_diaoqulist2:
+  - by: xpath
+    locator: "//*[@class='ant-form ant-form-horizontal']//label[@title='选择批次']/../../div[2]"
+    action: click
+#操作数据加入调取目录
+add_diaoqulist3:
+  - by: xpath
+#    locator: "/html/body/div[16]/div/div/div/div[2]/div[1]/div/div/div[2]/div"
+    locator: "//*[@class='ant-form ant-form-horizontal']//label[@title='选择批次']/../../div[2]//input"
+    action: enter_click
+  - by: xpath
+    locator: "//*[@class='ant-modal-footer']//span[contains(text(),'确 定')]"
+    action: click
+
+#群体分析-共同交易对端-查询
+group_transaction1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'群体分析')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//div[@title='支付宝默认列表']/../../../../span[2]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='common-trade-container group-analysis-component']//input[@placeholder='请输入关键字']"
+    action: send
+    value: '2088131888880121'
+  - by: xpath
+    locator: "//*[@class='common-trade-container group-analysis-component']//span[contains(text(),'查 询')]"
+    action: click
+#群体分析-共同交易对端-右键点击
+group_transaction2:
+  - by: xpath
+    locator: "//*[@class='common-trade-container group-analysis-component']//span[contains(text(),'2088131888880121')]"
+    #鼠标右键点击
+    action: right_click
+  - by: xpath
+    locator: "//*[@class='ant-list-items']/li[1]"
+    action: hover
+#群体分析-共同交易对端-加入白名单
+group_transaction3:
+  - by: xpath
+    locator: "//*[@class='ant-list-items']/li[2]"
+    action: click
+#群体分析-共同交易对端-加入白名单-确定
+group_transaction4:
+  - by: xpath
+    locator: "//*[@class='ant-modal-content']//span[contains(text(),'确 定')]"
+    action: click
+
+#群体分析-共同通话对端-点击
+group_call1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'群体分析')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-tabs-nav-wrap']//div[contains(text(),'共同通话对端')]"
+    action: click
+#群体分析-共同通话对端操作-查询
+group_call2:
+  - by: xpath
+    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//div[@title='通话话单默认列表']/../../../../span[2]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='common-call-container group-analysis-component']//input[@placeholder='请输入关键字']"
+    action: send
+    value: '96188825'
+  - by: xpath
+    locator: "//*[@class='common-call-container group-analysis-component']//span[contains(text(),'查 询')]"
+    action: click
+#群体分析-共同通话对端操作-查看详情
+group_call3:
+  - by: xpath
+    locator: "//*[@class='ant-table-tbody']//span[contains(text(),'96188825')]/../../../../td[9]//*[name()='svg']"
+    action: click
+#群体分析-共同通话对端操作-点击保存
+group_call4:
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'保 存')]"
+    action: click
+#群体分析-共同通话对端操作-编辑过程库
+group_call5:
+  - by: xpath
+#    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择上级分组名称')]"
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择上级分组名称')]/../../span[2]"
+#    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择上级分组名称')]/..//input"
+    action: click
+#    action: send
+#    value: '数据表'
+  - by: xpath
+    locator: "//*[@class='ant-select-tree']//span[@title='数据表']"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请输入过程库名')]/..//input"
+    action: send
+    value: '过程库1'
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择数据模型类型')]/../..//input"
+    action: click
+#群体分析-共同通话对端操作-编辑过程库-选择数据类型(点击键盘回车键)
+group_call6:
+  - by: xpath
+#    locator: "//*[@class='rc-virtual-list']//div[contains(text(),'支付宝')]"
+#    locator: "//*[@class='rc-virtual-list']//div[@class='rc-virtual-list-holder']/div/div/div[1]/div"
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'请选择数据模型类型')]/../..//input"
+    action: enter_click
+#群体分析-共同通话对端操作-保存至过程库
+group_call7:
+  - by: xpath
+#    locator: "//*[@style='width: 840px; transform-origin: -279px 38px;']//span[contains(text(),'确 定')]"
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[4]/div/div/div[2]/div/div[2]/div[3]/div/button[2]'
+    action: click
+#群体分析-共同通话对端操作-保存至过程库-关闭弹窗
+group_call8:
+  - by: xpath
+    locator: "//*[@class='ant-modal-wrap ']//span[@class='ant-modal-close-x']/span[@role='img']//*[name()='svg']"
+#    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div[2]/div/div[3]/div[2]/div[2]/div[3]/div/div[2]/div/div[2]/button/span/span'
+    action: click
+
+#断言调调证次数据是否抽取成功
+check_update_quzheng:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"主题库提取日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-table-scroll"]//td[contains(text(),"取证")]/../td[8]/span'
+    action: text
+
+#断言图库数据是否抽取成功
+check_update_tuku:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"图谱提取日志")]'
+    action: click
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[3]/span'
+    action: text
+
+#群体分析-共同聊天对端-点击
+group_chat1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'群体分析')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-tabs-nav-wrap']//div[contains(text(),'共同聊天对端')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//div[@title='取证报告默认列表']/../../../../span[2]"
+    action: click
+#群体分析-共同聊天对端-查询
+group_chat2:
+  - by: xpath
+    locator: "//*[@class='common-chat-container group-analysis-component']//input[@placeholder='请输入关键字']"
+    action: send
+    value: 'wxid'
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button'
+    action: click
+#群体分析-共同聊天对端-查看操作详情
+group_chat3:
+  - by: xpath
+    locator: "//*[@class='ant-table-tbody']//span[contains(text(),'wxid_ityqw3kdmwea22')]/../../../../td[9]//*[name()='svg']"
+    action: click
+#群体分析-共同聊天对端-详情-搜索聊天信息
+group_chat4:
+  - by: xpath
+    locator: "//*[@class='m-message']//input[@placeholder='搜索聊天内容']"
+    action: send-enter
+    value: '转账'
+#群体分析-共同聊天对端-详情-搜索聊天信息-关闭弹窗
+group_chat5:
+  - by: xpath
+    locator: "//*[@class='ant-modal chat-container-modal']//span[@class='ant-modal-close-x']/span[@role='img']//*[name()='svg']"
+    action: click
+
+#群体分析-共同登录IP-点击
+group_loginIp1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'群体分析')]"
+    action: click
+  - by: xpath
+    locator: "//*[@class='ant-tabs-nav-wrap']//div[contains(text(),'共同登录IP')]"
+    action: click
+#  - by: xpath
+#    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//div[@title='支付宝默认列表']/../../../../span[2]"
+#    action: click
+#群体分析-共同登录IP-查询
+group_loginIp2:
+  - by: xpath
+    locator: "//*[@class='common-login-ip-container group-analysis-component']//div[@title='最少登录账号个数']//span[@aria-label='down']"
+    action: click
+  - by: xpath
+    locator: "//*[@class='common-login-ip-container group-analysis-component']//input[@placeholder='请输入关键字']"
+    action: send
+    value: '成都'
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div[2]/div/div[3]/div[4]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button'
+    action: click
+#群体分析-共同登录IP-查看操作详情
+group_loginIp3:
+  - by: xpath
+    locator: "//*[@class='ant-table-tbody']//span[contains(text(),'117.136.64.6')]/../../../..//*[name()='svg']"
+    action: click
+#群体分析-共同登录IP-查看操作详情-关闭弹窗
+group_loginIp4:
+  - by: xpath
+#    locator: "//*[@class='ant-modal-wrap ']//span[@class='ant-modal-close-x']/span[@role='img']//*[name()='svg']"
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div[2]/div/div[3]/div[4]/div[2]/div[3]/div/div[2]/div/div[2]/button'
+    action: click
+
+#关联分析
+group_relevance1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'关联分析')]"
+    action: click
+#关联分析-查询
+group_relevance2:
+  - by: xpath
+    locator: "//*[@class='header']//span[contains(text(),'查 询')]"
+    action: click
+
+#团伙管理
+group_gang1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'团伙管理')]"
+    action: click
+
+#信息补齐
+group_information1:
+  - by: xpath
+    locator: "//*[@class='tabs']//div[contains(text(),'信息补齐')]"
+    action: click
+#信息补齐-选择嫌疑人
+group_information2:
+  - by: xpath
+    locator: "//*[@class='ant-tree suspect-tree ant-tree-block-node']//*[name()='div' and @title='刘小小' ]"
+    action: click
+
+#校验
+group_check:
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/main/div[1]/div[1]/div/div/div/div/div/table/tbody/tr[1]/td[3]'
+    action: text
+
+
+
+
+

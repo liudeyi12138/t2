@@ -1,0 +1,5 @@
+#附件分析-图片分析
+check_annex_picture:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"图片")]'
+    action: click

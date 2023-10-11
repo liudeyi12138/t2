@@ -1,0 +1,38 @@
+#专题分析-微信分析-消费分析
+check_WeChat_Consumption1:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[contains(text(),"财付通默认列表")]/../../../../.././span[2]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"消费分析")]'
+    action: click
+check_WeChat_Consumption2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入交易单号搜索"]'
+    action: send
+    value: '1000050001200302022208000340344585466737'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_WeChat_Consumption3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"1000050001200302022208000340344585466737")]'
+    action: text
+
+#专题分析-微信分析-消费分析-充值信息
+check_WeChat_Consumption_Recharge1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"充值信息")]'
+    action: click
+check_WeChat_Consumption_Recharge2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入账户名称搜索"]'
+    action: send
+    value: 'wang13882114561'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_WeChat_Consumption_Recharge3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"wang13882114561")]'
+    action: text

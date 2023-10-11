@@ -1,0 +1,33 @@
+#专题分析-支付宝分析-数据关联-支付宝主端信息'
+check_Alipay_Association1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"支付宝主端信息")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-warp mt mb"]//input[@placeholder= "请输入关键字搜索"]'
+    action: send
+    value: '黄小扬'
+  - by: xpath
+    locator: '//*[@class="operator-warp mt mb"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Association2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"黄小扬")]'
+    action: text
+
+#专题分析-支付宝分析-数据关联-支付宝主端信息'
+check_Alipay_Association3:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"未调取对端基本信息")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-warp mt mb"]//input[@placeholder= "请输入关键字搜索"]'
+    action: send
+    value: '周小哲'
+  - by: xpath
+    locator: '//*[@class="operator-warp mt mb"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Association4:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"周小哲")]'
+    action: text

@@ -1,0 +1,83 @@
+{
+  "uid" : "a3c2736262a3b402",
+  "name" : "test_fund_rawdata",
+  "fullName" : "test_01login.TestStart#test_fund_rawdata",
+  "historyId" : "c6eba7e97553433739173f873003ee67",
+  "time" : {
+    "start" : 1696920974740,
+    "stop" : 1696920974740,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 187, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "专题分析-资金专题分析-原始数据查询"
+  }, {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "25992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "add3810b12b8599f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920929677,
+        "stop" : 1696920929677,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2bb94fcbe8516d3d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920821142,
+        "stop" : 1696920821142,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "a3c2736262a3b402.json",
+  "parameterValues" : [ ]
+}

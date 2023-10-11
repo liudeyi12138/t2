@@ -1,0 +1,229 @@
+#资金专题分析-可疑行为分析-大额转账-单笔大额转账
+check_large_single1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "大额转账"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "单笔大额转账"]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: send
+    value: '12000'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div[5]/div/div/div/div/div[1]/button/span'
+    action: click
+check_large_single2:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "120000"]'
+    action: text
+
+#资金专题分析-可疑行为分析-大额转账-累计日大额转账
+check_large_accumulate1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "大额转账"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "累计日大额转账"]'
+    action: click
+check_large_accumulate2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: back_click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[1]/div[2]/div/div/div/div[2]/input'
+    action: send
+    value: '6000'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[5]/div/div/div/div/div[1]/button/span'
+    action: click
+check_large_accumulate3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "1068145"]'
+    action: text
+
+#资金专题分析-可疑行为分析-异常时间段转账
+check_abnormal_time1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "异常时间段转账"]'
+    action: click
+check_abnormal_time2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="交易金额"]'
+    action: send
+    value: '60000'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[text()="查 询"]'
+    action: click
+check_abnormal_time3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "662546"]'
+    action: text
+
+#资金专题分析-可疑行为分析-频繁交易
+check_frequent_transactions1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "频繁交易"]'
+    action: click
+check_frequent_transactions2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入最小单日交易次数"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入最小单日交易次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入最小单日交易次数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入最小单日交易次数"]'
+    action: send
+    value: '8'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[text()="查 询"]'
+    action: click
+check_frequent_transactions3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "1.17"]'
+    action: text
+
+#资金专题分析-可疑行为分析-快进快出
+check_fast_inout1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "快进快出"]'
+    action: click
+check_fast_inout2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入最小交易次数"]'
+    action: send
+    value: '30'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[text()="查 询"]'
+    action: click
+check_fast_inout3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "290199.4"]'
+    action: text
+
+#资金专题分析-可疑行为分析-账户分工
+check_account_work1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "账户分工"]'
+    action: click
+check_account_work2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb mt"]//label[@title="收款最小收支次数比例:"]/../..//input[@placeholder="最小收支次数比例"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb mt"]//label[@title="收款最小收支次数比例:"]/../..//input[@placeholder="最小收支次数比例"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb mt"]//label[@title="收款最小收支次数比例:"]/../..//input[@placeholder="最小收支次数比例"]'
+    action: send
+    value: '3'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[text()="查 询"]'
+    action: click
+check_account_work3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "3895510.25"]'
+    action: text
+
+#资金专题分析-可疑行为分析-规律性分析-沉睡账户
+check_regularity_sleep1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "规律性分析"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "沉睡账户"]'
+    action: click
+check_regularity_sleep2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入关键词"]'
+    action: send
+    value: '刘'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[text()="查 询"]'
+    action: click
+check_regularity_sleep3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "刘小小"]'
+    action: text
+
+#资金专题分析-可疑行为分析-规律性分析-间隙性账户
+check_regularity_gap1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "规律性分析"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "间隙性账户"]'
+    action: click
+check_regularity_gap2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入关键词"]'
+    action: send
+    value: '黄'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[text()="查 询"]'
+    action: click
+check_regularity_gap3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "黄小扬"]'
+    action: text
+
+
+#资金专题分析-可疑行为分析-规律性分析-资金规律
+check_regularity_fund1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "规律性分析"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "资金规律"]'
+    action: click
+
+#资金专题分析-可疑行为分析-试机测试
+check_test_machine1:
+  - by: xpath
+    locator: '//*[@class="app-main"]//div[text() = "试机测试"]'
+    action: click
+check_test_machine2:
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder="请输入关键词"]'
+    action: send
+    value: '田'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[text()="查 询"]'
+    action: click
+check_test_machine3:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//span[text() = "田小维"]'
+    action: text
+
+

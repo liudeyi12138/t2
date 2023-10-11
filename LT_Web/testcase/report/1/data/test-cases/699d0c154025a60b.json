@@ -1,0 +1,63 @@
+{
+  "uid" : "699d0c154025a60b",
+  "name" : "test_Alipay_Enterprise",
+  "fullName" : "test_01login.TestStart#test_Alipay_Enterprise",
+  "historyId" : "5fee454dd358d28c3b2b3de20b700679",
+  "time" : {
+    "start" : 1696920929762,
+    "stop" : 1696920929763,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 320, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "story",
+    "value" : "专题分析-支付宝分析-企业支付宝分析"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "27812-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "699d0c154025a60b.json",
+  "parameterValues" : [ ]
+}

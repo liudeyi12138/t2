@@ -1,0 +1,83 @@
+{
+  "uid" : "69b3e043cec04846",
+  "name" : "test_toolbox_ConsolidationTable",
+  "fullName" : "test_01login.TestStart#test_toolbox_ConsolidationTable",
+  "historyId" : "8051c0d44023c6e59d6d5bd8c6a13d09",
+  "time" : {
+    "start" : 1696920974780,
+    "stop" : 1696920974780,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 349, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "story",
+    "value" : "工具箱-并表"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "25992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2e3003fd2cd2c76",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920929786,
+        "stop" : 1696920929786,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "35ffc96b841831fe",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1696920821193,
+        "stop" : 1696920821193,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "69b3e043cec04846.json",
+  "parameterValues" : [ ]
+}

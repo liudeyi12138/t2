@@ -1,0 +1,21 @@
+#微信分析-原始数据查询
+check_WeChat_original_data1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"财付通基本信息")]'
+    action: click
+check_WeChat_original_data2:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"财付通交易记录")]'
+    action: click
+check_WeChat_original_data3:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"微信基本信息")]'
+    action: click
+check_WeChat_original_data4:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"微信好友")]'
+    action: click
+check_WeChat_original_data5:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//td[contains(text(),"忘梓")]'
+    action: text

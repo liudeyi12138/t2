@@ -1,0 +1,190 @@
+#通话关系分析-高频通话
+check_High_frequency_call1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"高频通话")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请填写关键词"]'
+    action: send
+    value: '13468881201'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_High_frequency_call2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"13468881201")]'
+    action: text
+
+#通话关系分析-零秒通话
+check_Zero_seconds_call1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"零秒通话")]'
+    action: click
+
+#通话关系分析-非正常时段通话
+check_Abnormal_period_call1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"非正常时段通话")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入关键词"]'
+    action: send
+    value: '136****9989'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入关键词"]/../../../../..//span[contains(text(),"查 询")]'
+    action: click
+check_Abnormal_period_call2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"136****9989")]'
+    action: text
+
+#通话关系分析-共同联系人
+check_common_contacts1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"共同联系人")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//label[@title="最少主端个数"]/../../..//input[@placeholder="请填写关键词"]'
+    action: send
+    value: '9533885'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//label[@title="最少主端个数"]/../../..//span[contains(text(),"查 询")]'
+    action: click
+check_common_contacts2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"9533885")]'
+    action: text
+
+#通话关系分析-互相通话
+check_mutual_call1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"互相通话")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//span[contains(text(),"主端号码1(可右键)")]/../../../../../../../../../../../../../..//input[@placeholder="请填写关键词"]'
+    action: send
+    value: '18898889945'
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//span[contains(text(),"主端号码1(可右键)")]/../../../../../../../../../../../../../..//span[contains(text(),"查 询")]'
+    action: click
+check_mutual_call2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//span[contains(text(),"主端号码1(可右键)")]/../../../../../../../../../../../../../..//span[contains(text(),"18898889945")]'
+    action: text
+
+
+#通话关系分析-新旧号码
+check_New_old_numbers1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"可疑维度分析")]/../..//div[contains(text(),"新旧号码")]'
+    action: click
+
+
+#通话关系分析-位置分析-高频位置分析
+check_position_treble1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]/../..//div[contains(text(),"高频位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入"]'
+    action: send
+    value: '30'
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//span[contains(text(),"查 询")]'
+    action: click
+check_position_treble2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//span[contains(text(),"22891")]'
+    action: text
+
+#通话关系分析-位置分析-轨迹分析
+check_trace_analysis1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]/../..//div[contains(text(),"轨迹分析")]'
+    action: click
+check_trace_analysis2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@type="checkbox"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@type="checkbox"]/../../../../../../..//span[contains(text(),"查 询")]'
+    action: click
+check_trace_analysis3:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-tabpane ant-tabs-tabpane-active"]//li[contains(text(),"共 213 条")]'
+    action: text
+
+#通话关系分析-位置分析-轨迹重叠
+check_trace_overlap1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]/../..//div[contains(text(),"轨迹重叠")]'
+    action: click
+
+#通话关系分析-位置分析-轨迹相近
+check_trace_close1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]/../..//div[contains(text(),"轨迹相近")]'
+    action: click
+
+#通话关系分析-位置分析-位置分布
+check_location_distribution1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"位置分析")]/../..//div[contains(text(),"位置分布")]'
+    action: click
+
+#通话关系分析-通话规律分析-对端统计分析
+check_patterns_peer1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"通话规律分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"通话规律分析")]/../..//div[contains(text(),"对端统计分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+
+#通话关系分析-通话规律分析-时间统计分析
+check_patterns_time1:
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"通话规律分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="call-relationship-container"]//div[contains(text(),"通话规律分析")]/../..//div[contains(text(),"时间统计分析")]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div/ul/li/span[2]/span'
+    action: click

@@ -1,0 +1,402 @@
+#人物身份-基础信息
+check_people_basedata1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"人物身份")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"基础信息")]'
+    action: click
+check_people_basedata2:
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[1]/span'
+    action: text
+
+#人物身份-分析信息
+check_people_analysisdata1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"人物身份")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"分析信息")]'
+    action: click
+check_people_analysisdata2:
+  - by: xpath
+    locator: '//*[@class="list"]//div[contains(text(),"QQ")]/..//span[contains(text(),"2")]'
+    action: text
+
+#人物身份-应用信息
+check_people_applicationdata1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"人物身份")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"应用信息")]'
+    action: click
+check_people_applicationdata2:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//div[contains(text(),"财付通交易记录")]/..//div[contains(text(),"25")]'
+    action: text
+
+#人物身份-采集信息
+check_people_collectdata1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"人物身份")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"采集信息")]'
+    action: click
+check_people_collectdata2:
+  - by: xpath
+    locator: '//*[@class="ant-card-body"]//div[contains(text(),"微信")]/..//div[contains(text(),"73")]'
+    action: text
+
+#数据初析-好友
+check_data_friends1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"好友")]'
+    action: click
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[1]/span[2]'
+    action: click
+check_data_friends2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键词检索"]'
+    action: send
+    value: '2633289866'
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//span[contains(text(),"查 询")]'
+    action: click
+check_data_friends3:
+  - by: xpath
+    locator:  '//*[@class="ant-table-content"]//span[contains(text(),"腾讯新闻")]'
+    action: text
+
+#数据初析-公众号
+check_data_official1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"公众号")]'
+    action: click
+#数据初析-公众号
+check_data_official2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入关键词进行检索"]'
+    action: send
+    value: 'QQ精选'
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+#数据初析-公众号
+check_data_official3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"QQ精选")]'
+    action: text
+
+#数据初析-群组
+check_data_group1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"群组")]'
+    action: click
+check_data_group2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[2]/div[2]/div/div/span/input'
+    action: send
+    value: '驾驶员群'
+  - by: xpath
+    locator: '//*[@id="components-layout-demo-custom-trigger"]/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_data_group3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"驾驶员群")]'
+    action: text
+
+#数据初析-短信
+check_data_message1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"短信")]'
+    action: click
+check_data_message2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[4]/div[2]/div[1]/form/div[2]/div[2]/div/div/span/input'
+    action: send
+    value: '血'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[4]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_data_message3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"血")]'
+    action: text
+
+#数据初析-通话记录
+check_data_calllog1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"通话记录")]'
+    action: click
+check_data_calllog2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[5]/div[2]/div[1]/form/div[2]/div[2]/div/div/span/input'
+    action: send
+    value: '1518XXX2520'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[5]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_data_calllog3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"1518XXX2520")]'
+    action: text
+
+#数据初析-交易信息
+check_data_transaction1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"交易信息")]'
+    action: click
+check_data_transaction2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最低金额"]'
+    action: send
+    value: '99'
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最高金额"]'
+    action: send
+    value: '100'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[6]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_data_transaction3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"400")]'
+    action: text
+
+#数据初析-快递信息
+check_data_fastmail1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"快递信息")]'
+    action: click
+check_data_fastmail2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[7]/div[2]/div[1]/form/div[1]/div[2]/div/div/span/input'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[7]/div[2]/div[1]/form/div[2]/div/div/div/div/div[1]/button/span'
+    action: click
+#check_data_fastmail3:
+#  - by: xpath
+#    locator: '//*[@class="ant-table-content"]//span[contains(text(),"400")]'
+#    action: text
+
+#数据初析-文件信息
+check_data_file1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"数据初析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"文件信息")]'
+    action: click
+check_data_file2:
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"请选择文件类型")]/../..//input'
+    action: click
+  - by: xpath
+    locator: '//*[@class="rc-virtual-list-holder-inner"]/div[3]/div'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[8]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_data_file3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"音频")]'
+    action: text
+
+#数据初析-词云分析
+check_data_world1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"词云分析")]'
+    action: click
+check_data_world2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[1]/div[2]/div/label[2]/span[2]'
+    action: click
+check_data_world3:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入"]'
+    action: send
+    value: '聊天'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_data_world4:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//td[contains(text(),"聊天")]'
+    action: text
+
+#数据初析-社交聊天
+check_data_talk1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"社交聊天")]'
+    action: click
+check_data_talk2:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[contains(text(),"QQ ")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[contains(text(),"元X宝 ")]'
+    action: click
+check_data_talk3:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//span[contains(text(),"腾讯新闻 ")]'
+    action: click
+check_data_talk4:
+  - by: xpath
+    locator: '//*[@class="message-content-list"]//div[contains(text(),"现场！美媒要求中国特使用英文回答")]'
+    action: text
+
+#数据初析-行为习惯
+check_data_habit1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"行为习惯")]'
+    action: click
+check_data_habit2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[2]/span[2]'
+    action: click
+check_data_habit3:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[3]/span[2]'
+    action: click
+check_data_habit4:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[4]/span[2]'
+    action: click
+check_data_habit5:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[5]/span[2]'
+    action: click
+check_data_habit6:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[2]/div/label[6]/span[2]'
+    action: click
+check_data_habit7:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"微博行为")]'
+    action: click
+check_data_habit8:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"电子邮箱")]'
+    action: click
+check_data_habit9:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"WIFI信息")]'
+    action: click
+check_data_habit10:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"闹钟行为")]'
+    action: click
+check_data_habit11:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"日历记录行为")]'
+    action: click
+check_data_habit12:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"微博行为")]'
+    action: click
+
+#数据初析-行踪规律
+check_data_walk1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"行踪规律")]'
+    action: click
+check_data_walk2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"定位信息")]'
+    action: click
+check_data_walk3:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"行程信息")]'
+    action: click
+check_data_walk4:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"双休轨迹")]'
+    action: click
+check_data_walk5:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-wrap"]//div[contains(text(),"节日轨迹")]'
+    action: click
+
+#数据初析-高频词语
+check_data_words1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"高频词语")]'
+    action: click
+check_data_words2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入"]'
+    action: send
+    value: '聊天'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_data_words3:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div[2]/div[2]/div/div[3]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[7]/span'
+    action: text
+
+#数据初析-关系网络
+check_data_relationship_network1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"关系网络")]'
+    action: click
+check_data_relationship_network2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入"]'
+    action: send
+    value: '0'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+
+#数据初析-内容分析
+check_data_content1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"内容分析")]'
+    action: click
+check_data_content2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div/div/ul/li[1]'
+    action: text
+
+#数据初析-情报挖掘
+check_data_gen1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"情报挖掘")]'
+    action: click
+
+
+
+
+
+
+
+
+

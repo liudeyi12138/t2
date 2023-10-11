@@ -1,0 +1,80 @@
+#专题分析-支付宝分析-IP分析-支付宝登录统计'
+check_Alipay_IP1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"支付宝登录统计")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "最小个数"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "最小个数"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "最小个数"]'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "请输入归属地名称"]'
+    action: send
+    value: '成都'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_IP2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"117.136.62.146")]'
+    action: text
+
+#专题分析-支付宝分析-IP分析-IP跳转分析'
+check_Alipay_IpJump1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"IP跳转分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "请输入主端姓名或账号"]'
+    action: send
+    value: '关小鸿'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_IpJump2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"关小鸿")]'
+    action: text
+
+#专题分析-支付宝分析-IP分析-团伙预判'
+check_Alipay_IpGang1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"团伙预判")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小登录次数"]/../..//input[@aria-valuenow="3"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小登录次数"]/../..//input[@aria-valuenow="3"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小登录次数"]/../..//input'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小账号个数"]/../..//input[@aria-valuenow="2"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小账号个数"]/../..//input[@aria-valuenow="2"]'
+    action: back_click
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//label[@title="最小账号个数"]/../..//input'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//input[@placeholder= "请输入地域信息"]'
+    action: send
+    value: '福建'
+  - by: xpath
+    locator: '//*[@class="search-wrap mb mt"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_IpGang2:
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[1]/div/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[3]/span/span'
+    action: text

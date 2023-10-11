@@ -1,0 +1,17 @@
+#专题分析-支付宝分析-透视分析
+check_Alipay_Perspective1:
+  - by: xpath
+    locator: '//*[@class="ant-table-thead"]//th[@colstart= "0"]'
+    action: click
+check_Alipay_Perspective2:
+  - by: xpath
+    locator: '//*[@class="ant-card ant-card-bordered opposite-container"]//input[@placeholder= "请输入关键字搜索"]'
+    action: send
+    value: '中国建设银行'
+  - by: xpath
+    locator: '//*[@class="ant-card ant-card-bordered opposite-container"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Perspective3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"6217003288888249555")]'
+    action: text

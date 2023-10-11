@@ -1,0 +1,63 @@
+{
+  "uid" : "d5bd6ea116d84832",
+  "name" : "test_thematic_annex",
+  "fullName" : "test_01login.TestStart#test_thematic_annex",
+  "historyId" : "7544582efaaea1f07694a5f0a655dbe6",
+  "time" : {
+    "start" : 1696920821137,
+    "stop" : 1696920821137,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('test_01login.py', 175, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "奇数百炼Web"
+  }, {
+    "name" : "story",
+    "value" : "专题分析-手机取证分析-附件分析"
+  }, {
+    "name" : "tag",
+    "value" : "skip"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_01login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStart"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MLUSLCCA"
+  }, {
+    "name" : "thread",
+    "value" : "27992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "skip" ]
+  },
+  "source" : "d5bd6ea116d84832.json",
+  "parameterValues" : [ ]
+}

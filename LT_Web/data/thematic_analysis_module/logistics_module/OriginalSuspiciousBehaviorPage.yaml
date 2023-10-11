@@ -1,0 +1,90 @@
+#可疑行为分析-发货地与手机归属地不一致
+check_Suspicious_Behavior1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"发货地与手机归属地不一致")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入快递单号"]'
+    action: send
+    value: '75418376674556'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_Suspicious_Behavior2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"75418376674556")]'
+    action: text
+
+#可疑行为分析-收货地与手机归属地不一致
+check_Suspicious_different_address1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"收货地与手机归属地不一致")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入快递单号"]'
+    action: send
+    value: '75420062066867'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_Suspicious_different_address2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"75420062066867")]'
+    action: text
+
+#可疑行为分析-收发货地址相同
+check_Suspicious_equal_address1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"收发货地址相同")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入快递单号"]'
+    action: send
+    value: '4310137155243'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_Suspicious_equal_address2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"4310137155243")]'
+    action: text
+
+#可疑行为分析-收发货电话相同
+check_Suspicious_equal_phone1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"收发货电话相同")]'
+    action: click
+
+#可疑行为分析-异常揽件时间
+check_Suspicious_abnormal_time1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"异常揽件时间")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入快递单号"]'
+    action: send
+    value: '4310137191847'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_Suspicious_abnormal_time2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"4310137191847")]'
+    action: text
+
+#可疑行为分析-虚拟号码
+check_Suspicious_virtually_number1:
+  - by: xpath
+    locator: '//*[@class="tab-wrap"]//div[contains(text(),"虚拟号码")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//input[@placeholder= "请输入快递单号"]'
+    action: send
+    value: '75404659215190'
+  - by: xpath
+    locator: '//*[@class="operator-wrap mb"]//span[contains(text(),"查 询")]'
+    action: click
+check_Suspicious_virtually_number2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"75404659215190")]'
+    action: text

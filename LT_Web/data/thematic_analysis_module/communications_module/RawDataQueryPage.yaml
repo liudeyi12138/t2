@@ -1,0 +1,17 @@
+#原始数据查询
+check_Raw_data_query1:
+  - by: xpath
+    locator: '//*[@class="search-warp mb"]//label[@title="主端号码"]/../..//input[@placeholder= "请输入主端号码"]'
+    action: send
+    value: '156****3118'
+  - by: xpath
+    locator: '//*[@class="search-warp mb"]//span[contains(text(),"搜索")]'
+    action: click
+check_Raw_data_query2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"156****3118")]'
+    action: text
+
+
+
+

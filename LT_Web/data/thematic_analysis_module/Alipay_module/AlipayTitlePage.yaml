@@ -1,0 +1,50 @@
+#专题分析-支付宝分析-消费标题分析-主端'
+check_Alipay_Title_Host1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"主端")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap mt"]//span[contains(text(),"添加消费标题")]'
+    action: click
+check_Alipay_Title_Host2:
+  - by: xpath
+    locator: '//*[@class="title-type-left"]//span[contains(text(),"新增")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//input[@placeholder= "标题名称"]'
+    action: send
+    value: '消费'
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//span[contains(text(),"确 定")]'
+    action: click
+check_Alipay_Title_Host3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//td[contains(text(),"消费")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="title-type-right"]//span[contains(text(),"新增")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//div[contains(text(),"添加子类消费标题")]/../..//input[@placeholder= "标题名称"]'
+    action: send
+    value: '红包'
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//div[contains(text(),"添加子类消费标题")]/../..//span[contains(text(),"确 定")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="title-type-left"]//span[contains(text(),"返回")]'
+    action: click
+check_Alipay_Title_Host4:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"红包")]'
+    action: text
+
+#专题分析-支付宝分析-消费标题分析-对端'
+check_Alipay_Title_peer1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"对端")]'
+    action: click
+check_Alipay_Title_peer2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"王小世")]'
+    action: text

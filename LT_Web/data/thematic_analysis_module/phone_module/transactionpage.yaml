@@ -1,0 +1,210 @@
+#交易概述
+check_transaction_overview1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易概述")]'
+    action: click
+check_transaction_overview2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最低金额"]'
+    action: send
+    value: '100'
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最高金额"]'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_transaction_overview3:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//div[contains(text(),"总收入金额")]/../div[contains(text(),"1760")]'
+    action: text
+
+#交易关系
+check_transaction_relationship1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易关系")]'
+    action: click
+check_transaction_relationship2:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@value="查看全部好友"]/../../span[2]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入最小交易次数"]'
+    action: send
+    value: '5'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+#check_transaction_relationship3:
+#  - by: xpath
+#    locator: '//*[@class="ant-spin-container"]//div[contains(text(),"总收入金额")]/../div[contains(text(),"1760")]'
+#    action: text
+
+#交易分析-交易账号
+check_transaction_account1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_account2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"交易账号")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最小次数"]'
+    action: send
+    value: '10'
+  - by: xpath
+    locator: '//*[@class="ant-col ant-form-item-control"]//span[contains(text(),"查 询")]'
+    action: click
+check_transaction_account3:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"12")]'
+    action: text
+
+#交易分析-交易记录
+check_transaction_record1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_record2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"交易记录")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最低金额"]'
+    action: send
+    value: '100'
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="最高金额"]'
+    action: send
+    value: '200'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_transaction_record3:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//li[contains(text(),"共 12 条")]'
+    action: text
+
+#交易分析-交易频率
+check_transaction_frequency1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_frequency2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"交易频率")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入交易总次数"]'
+    action: send
+    value: '8'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_transaction_frequency3:
+  - by: xpath
+    locator: '//*[@class="ant-spin-container"]//li[contains(text(),"共 2 条")]'
+    action: text
+
+#交易分析-收支分析
+check_transaction_income1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_income2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"收支分析")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="in-out-analysis"]//input[@placeholder="最低金额"]'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '//*[@class="in-out-analysis"]//input[@placeholder="最高金额"]'
+    action: send
+    value: '1000'
+  - by: xpath
+    locator: '//*[@class="in-out-analysis"]//span[contains(text(),"查 询")]'
+    action: click
+
+#交易分析-账单时序
+check_transaction_billing1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_billing2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"账单时序")]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[5]/div[2]/form/div[2]/div[2]/div/div/div/div[1]/div/div[2]/input'
+    action: send
+    value: '200'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[5]/div[2]/form/div[2]/div[2]/div/div/div/div[3]/div/div[2]/input'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[5]/div[2]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_transaction_billing3:
+  - by: xpath
+    locator: '//*[@class="list-pagination"]//li[contains(text(),"共 8 条")]'
+    action: text
+
+#交易分析-节假日交易
+check_transaction_holiday1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_holiday2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"节假日交易")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入次数"]'
+    action: send
+    value: '1'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[6]/div[2]/div[1]/form/div[3]/div/div/div/div/div[1]/button/span'
+    action: click
+check_transaction_holiday3:
+  - by: xpath
+    locator:  '//*[@class="ant-table-content"]//p[contains(text(),"暂无数据")]'
+    action: text
+    
+#交易分析-交易日历
+check_transaction_calendar1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"交易分析")]'
+    action: click
+check_transaction_calendar2:
+  - by: xpath
+    locator: '//*[@class="ant-tabs-nav-scroll"]//div[contains(text(),"交易日历")]'
+    action: click
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[7]/div[2]/div[1]/form/div[3]/div[2]/div/div/div/div[1]/div/div[2]/input'
+    action: send
+    value: '100'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[7]/div[2]/div[1]/form/div[3]/div[2]/div/div/div/div[3]/div/div[2]/input'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '/html/body/div[1]/div/section/section/main/section/div/div[2]/div/div/div[2]/div/div[3]/div[7]/div[2]/div[1]/form/div[4]/div/div/div/div/div[1]/button/span'
+    action: click
+check_transaction_calendar3:
+  - by: xpath
+    locator: '//*[@class="cal_con list-item"]//div[contains(text(),"2021年11月")]/../../div[2]//div[contains(text(),"11")]'
+    action: click
+check_transaction_calendar4:
+  - by: xpath
+    locator: '//*[@class="ant-table-tbody"]//td[contains(text(),"12")]'
+    action: text
+
+
+
+
+

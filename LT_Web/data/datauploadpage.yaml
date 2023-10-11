@@ -1,0 +1,106 @@
+#首次进入-新建调证批次
+new_batch:
+#获取全部页面句柄，切换到当前最新打开的窗口
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+#    locator: '/html/body/div[10]/div/div[2]/div/div[2]/div[2]/input'
+    locator: '//*[@class="ant-modal-content"]//input[@placeholder="新建的批次"]'
+    action: send
+    value: '调证'
+  - by: xpath
+    locator: '//*[@class="ant-btn ant-btn-primary"]//span[contains(text(),"确 定")]'
+    action: click
+
+#数据上传-上传调证数据:
+upload_data:
+    #选择文件
+  - by: xpath
+    locator: '//*[@class="ant-upload ant-upload-select ant-upload-select-text"]//input[@directory="directory"]'
+    action: send
+#    value: 'C:/Users/admin/Desktop/a'
+    value: 'C:/Users/admin/PycharmProjects/LeiTingWeb/LT_Web/data/a'
+
+#调证数据上传完成-点击导入确定:
+upload_click:
+  - by: xpath
+    locator: '//*[@class="clean-button"]//span[contains(text(),"导 入")]'
+    action: click
+
+#调证数据上传完成-点击导入后-点击弹窗的确定:
+upload_click_ok:
+  - by: xpath
+    locator: '//*[@class="ant-modal-body"]//span[contains(text(),"确 定")]'
+    action: click
+
+#弹窗对否继续导入-否:
+continue_no:
+  - by: xpath
+    locator: '//*[@class="ant-modal-confirm-btns"]//span[contains(text(),"否")]'
+    action: click
+
+#新建取证批次
+new_batch_quzheng:
+#获取全部页面句柄，切换到当前最新打开的窗口
+  - by: window
+    locator: -1
+    action: change
+  - by: xpath
+    locator: '//*[@class="ant-form-item-control-input"]//span[contains(text(),"新建批次")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//input[@placeholder="新建的批次"]'
+    action: send
+    value: '取证'
+  - by: xpath
+    locator: '//*[@class="ant-btn ant-btn-primary"]//span[contains(text(),"确 定")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-select ant-select-single ant-select-show-arrow"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="rc-virtual-list-holder-inner"]//div[@title="取证"]'
+    action: click
+
+#数据上传-上传取证数据
+upload_data_quzheng:
+  - by: xpath
+    locator: '//*[@class="ant-btn"]//span[contains(text(),"上传检材")]'
+    action: click
+    #选择文件
+  - by: xpath
+    locator: '//*[@url="/fsimport/chunk"]//input[@type="file"]'
+    action: send
+    value: 'C:/Users/admin/PycharmProjects/LeiTingWeb/LT_Web/data/b/杜X小_20211221082511_html(已脱敏).rar'
+
+#关联嫌疑人-确定
+new_suspect:
+  - by: xpath
+    locator: '//*[@class="ant-form-item-control-input-content"]//span[contains(text(),"请选择关联嫌疑人")]/../../../..//button'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-form-item-control-input-content"]//input[@placeholder="请输入"]'
+    action: send
+    value: '嫌疑人1'
+  - by: xpath
+    locator: '//*[@class="ant-modal-content"]//div[contains(text(),"新增嫌疑人")]/../..//span[contains(text(),"确 定")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="drawer-footer"]//span[contains(text(),"确 定")]'
+    action: click
+
+#点击导入日志
+click_uploadlog:
+  - by: xpath
+    locator: '//*[@class="ant-btn ant-btn-primary"]//span[contains(text(),"导入日志")]'
+    action: click
+
+#断言是否数据导入成功
+assert_check5:
+  - by: xpath
+    locator: "//*[@role='alert']//p"
+    action: see
+  - by: xpath
+    locator: "//*[@role='alert']//p"
+    action: text

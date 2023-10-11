@@ -1,0 +1,13 @@
+#物流原始数据
+check_original_data1:
+  - by: xpath
+    locator: '//*[@class="search-warp mb"]//input[@placeholder= "请输入收件人电话"]'
+    action: send
+    value: '16621081422'
+  - by: xpath
+    locator: '//*[@class="search-warp mb"]//span[contains(text(),"搜索")]'
+    action: click
+check_original_data2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"16621081422")]'
+    action: text

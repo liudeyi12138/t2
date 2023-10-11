@@ -1,0 +1,13 @@
+#全文检索
+check_fulltext_search1:
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//input[@placeholder="请输入检索内容"]'
+    action: send
+    value: '聊天'
+  - by: xpath
+    locator: '//*[@class="search-wrap"]//span[contains(text(),"查 询")]'
+    action: click
+check_fulltext_search2:
+  - by: xpath
+    locator: '//*[@class="full-text-search"]//p[contains(text(),"暂无数据")]'
+    action: text

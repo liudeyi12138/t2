@@ -1,0 +1,33 @@
+#专题分析-支付宝分析-关联手机分析-共同充值手机'
+check_Alipay_Phone1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"共同充值手机")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="form-wrap mb mt"]//input[@placeholder= "请输入关键字"]'
+    action: send
+    value: '157'
+  - by: xpath
+    locator: '//*[@class="form-wrap mb mt"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Phone2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"157")]'
+    action: text
+
+#专题分析-支付宝分析-关联手机分析-账户绑定手机'
+check_Alipay_Phone_binding1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"账户绑定手机")]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="form-wrap mb mt"]//input[@placeholder= "请输入关键字"]'
+    action: send
+    value: '187'
+  - by: xpath
+    locator: '//*[@class="form-wrap mb mt"]//span[contains(text(),"搜索")]'
+    action: click
+check_Alipay_Phone_binding2:
+  - by: xpath
+    locator: '//*[@class="ant-table-content"]//span[contains(text(),"187")]'
+    action: text

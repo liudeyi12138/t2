@@ -1,0 +1,291 @@
+[ {
+  "uid" : "e364bc79e866a5cc",
+  "name" : "test_WeChat_association",
+  "time" : {
+    "start" : 1696920974757,
+    "stop" : 1696920974757,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fd62844b52d4e4a",
+  "name" : "test_toolbox_wide_table",
+  "time" : {
+    "start" : 1696920933242,
+    "stop" : 1696920944401,
+    "duration" : 11159
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "258d79cf4f080815",
+  "name" : "test_Alipay_Phone",
+  "time" : {
+    "start" : 1696920974765,
+    "stop" : 1696920974765,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7045252e947aef06",
+  "name" : "test_Alipay_Enterprise",
+  "time" : {
+    "start" : 1696920974770,
+    "stop" : 1696920974770,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "acecb57ab4d32ae1",
+  "name" : "test_update_quzheng_data",
+  "time" : {
+    "start" : 1696920974717,
+    "stop" : 1696920974717,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "cb3a976385251372",
+  "name" : "test_WeChat_consumption",
+  "time" : {
+    "start" : 1696920974758,
+    "stop" : 1696920974758,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "1c2509795824c33c",
+  "name" : "test_WeChat_Original",
+  "time" : {
+    "start" : 1696920974753,
+    "stop" : 1696920974753,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b2a94fd93fbc1634",
+  "name" : "test_upload_quzheng",
+  "time" : {
+    "start" : 1696920974715,
+    "stop" : 1696920974715,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "dbb831da043d9664",
+  "name" : "test_thematic_phone_communications",
+  "time" : {
+    "start" : 1696920974733,
+    "stop" : 1696920974733,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8c8322cadc5e59da",
+  "name" : "test_addcase_upload_diaozheng",
+  "time" : {
+    "start" : 1696920974709,
+    "stop" : 1696920974709,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "218327bdc8207123",
+  "name" : "test_Alipay_IP",
+  "time" : {
+    "start" : 1696920974762,
+    "stop" : 1696920974762,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f02cddf86ac6f164",
+  "name" : "test_communications_raw_data_query",
+  "time" : {
+    "start" : 1696920974749,
+    "stop" : 1696920974749,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "15365a50368648a6",
+  "name" : "test_thematic_fulltextsearch",
+  "time" : {
+    "start" : 1696920974737,
+    "stop" : 1696920974737,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4a4031872dc852c9",
+  "name" : "test_whitelist",
+  "time" : {
+    "start" : 1696920974776,
+    "stop" : 1696920974776,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5a3d6ab3a6179fc1",
+  "name" : "test_time_axis",
+  "time" : {
+    "start" : 1696920974778,
+    "stop" : 1696920974778,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "139c063b2593b780",
+  "name" : "test_update_diaozheng_data",
+  "time" : {
+    "start" : 1696920974713,
+    "stop" : 1696920974713,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2b0a3f25b8a2cf89",
+  "name" : "test_fund_traceability",
+  "time" : {
+    "start" : 1696920974744,
+    "stop" : 1696920974744,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fe8a579b93217bc8",
+  "name" : "test_fund_net_flow_direction",
+  "time" : {
+    "start" : 1696920974747,
+    "stop" : 1696920974747,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "69b3e043cec04846",
+  "name" : "test_toolbox_ConsolidationTable",
+  "time" : {
+    "start" : 1696920974780,
+    "stop" : 1696920974780,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e799bb27d0d28e65",
+  "name" : "test_fund_suspicious",
+  "time" : {
+    "start" : 1696920974742,
+    "stop" : 1696920974742,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2a7ea0cec3b5bc52",
+  "name" : "test_communications_call_relationship",
+  "time" : {
+    "start" : 1696920974751,
+    "stop" : 1696920974751,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a3c2736262a3b402",
+  "name" : "test_fund_rawdata",
+  "time" : {
+    "start" : 1696920974740,
+    "stop" : 1696920974740,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ac631a0453ec4bcc",
+  "name" : "test_Alipay_association",
+  "time" : {
+    "start" : 1696920974760,
+    "stop" : 1696920974760,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d2af6cd08d50de0c",
+  "name" : "test_thematic_annex",
+  "time" : {
+    "start" : 1696920974735,
+    "stop" : 1696920974735,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "37f374480fa08209",
+  "name" : "test_thematic_phone_image",
+  "time" : {
+    "start" : 1696920974731,
+    "stop" : 1696920974731,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "aac2c3ad9bdaa790",
+  "name" : "test_add_batch",
+  "time" : {
+    "start" : 1696920974773,
+    "stop" : 1696920974773,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ad31e27ee5162e76",
+  "name" : "test_Alipay_Perspective",
+  "time" : {
+    "start" : 1696920974768,
+    "stop" : 1696920974768,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f08d89a4d26ab8ca",
+  "name" : "test_update_tuku_data",
+  "time" : {
+    "start" : 1696920974719,
+    "stop" : 1696920974719,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fc0a20a2c0e4a8e9",
+  "name" : "test_super_person_data",
+  "time" : {
+    "start" : 1696920974721,
+    "stop" : 1696920974721,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

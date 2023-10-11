@@ -1,0 +1,57 @@
+#案件列表-点击【新建案件】
+click_addcase:
+  - by: xpath
+#    locator: "//*[@id='app']/div/div[2]/div[1]/div/div[1]/div[2]/button//span[contains(text(),'新建案件')]"
+    locator: "//span[contains(text(),'新建案件')]"
+    action: click
+
+#填写新增案件信息，点击提交
+Edit_new_case:
+  #案件名称
+  - by: xpath
+    locator: "//input[contains(@placeholder,'请输入案件名称')]"
+    action: send
+    value: '自动化测试案件01'
+#  #开始时时间
+#  - by: xpath
+#    locator: '//*[@id="app"]/div/div[3]/div/div[2]/form/div[4]/div/div/div/input'
+#    action: send
+#    value: '2023-3-16'
+#  #点击提交
+#  - by: xpath
+#    locator: "//span[contains(text(),'确 定')]"
+#    action: click
+
+#点击确定
+click_ok:
+  - by: xpath
+    locator: "//span[contains(text(),'确 定')]"
+    action: click
+
+#断言是否新增案件成功
+assert_check1:
+  - by: xpath
+    locator: "//*[@class='anticon anticon-check-circle']/../span[2]"
+    action: see
+  - by: xpath
+    locator: "//*[@class='anticon anticon-check-circle']/../span[2]"
+    action: text
+
+#案件新建成功后点击弹窗确定进入其首页
+click_newcase_ok:
+  - by: xpath
+    locator: "//*[@class='ant-modal-body']//span[contains(text(),'确 定')]"
+    action: click
+
+#搜索案件-回车-点击击进入其首页
+search_case:
+  - by: xpath
+    locator: "//*[@id='app']//input[contains(@placeholder,'请输入关键字')]"
+    action: send
+    value: '自动化测试案件01'
+  - by: xpath
+    locator: '//*[@id="app"]//div[contains(text(),"自动化测试案件01")]'
+    action: click
+
+
+

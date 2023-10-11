@@ -1,0 +1,23 @@
+#资金净流向分析
+check_fund_net_flow_direction1:
+  - by: xpath
+#    locator: "//*[@class='ant-form ant-form-inline']//span[@role= 'img']//*[name()='svg']"
+    locator: "/html/body/div[1]/div/section/section/main/section/div/div[1]/form/div[1]/div[2]"
+    action: click
+check_fund_net_flow_direction2:
+  - by: xpath
+#    locator: '//*[@class="ant-select-dropdown-content"]//div[contains(text(),"大于")]'
+    locator: '/html/body/div[12]/div/div/div/div[2]/div[1]/div/div/div[1]/div'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ant-form ant-form-inline"]//input[@placeholder= "请输入金额"]'
+    action: send
+    value: '500'
+  - by: xpath
+    locator: '//*[@class="ant-form ant-form-inline"]//span[contains(text(),"查 询")]'
+    action: click
+
+
+
+
+

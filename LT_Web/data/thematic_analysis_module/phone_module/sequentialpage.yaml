@@ -1,0 +1,19 @@
+#时空序数
+check_sequential_space_time:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"时空序数")]'
+    action: click
+
+#空间序数
+check_transaction_space1:
+  - by: xpath
+    locator: '//*[@class="tabs"]//div[contains(text(),"空间序数")]'
+    action: click
+check_transaction_space2:
+  - by: xpath
+    locator: '//*[@class="step"]//div[contains(text(),"2021-05-05")]/..//span[contains(text(),"1")]'
+    action: click
+check_transaction_space3:
+  - by: xpath
+    locator: '//*[@class="list"]//div[contains(text(),"对方号码:1731XXX5448")]'
+    action: text
